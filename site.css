@@ -62,7 +62,8 @@ footer a{color:#fff}
 footer .script{font-size:34px;color:#fff}
 .shirts{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .shirts figure{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden}
-.shirts figcaption{padding:16px 18px}
+.shirts figcaption{padding:16px 18px}.shirts.s3{grid-template-columns:repeat(3,1fr)}.shirts img{width:100%;aspect-ratio:1/1.1;object-fit:cover;object-position:top}.price{font:400 22px "Libre Baskerville",serif;color:var(--brown2);margin:2px 0 6px}
+@media(max-width:860px){.shirts.s3{grid-template-columns:1fr 1fr}}
 .lesson-nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:28px}
 @media(max-width:860px){.grid3,.grid2{grid-template-columns:1fr}.photo{aspect-ratio:1/1}.days{grid-template-columns:repeat(2,1fr)}.pillars{grid-template-columns:repeat(2,1fr)}section{padding:48px 0}}
-@media(max-width:560px){header .wrap{flex-direction:column}.brand img{height:46px}nav a{font-size:13px;padding:8px}.shirts{grid-template-columns:1fr}form .row{grid-template-columns:1fr}.btn{width:100%}}
+@media(max-width:560px){header .wrap{flex-direction:column}.brand img{height:46px}nav a{font-size:13px;padding:8px}.shirts,.shirts.s3{grid-template-columns:1fr}form .row{grid-template-columns:1fr}.btn{width:100%}}
