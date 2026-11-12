@@ -1,0 +1,68 @@
+
+:root{--cream:#f8f2e8;--paper:#fffdf9;--brown:#4a2c25;--brown2:#6b4338;--muted:#7d6a62;--line:#e6dacb;--blush:#efe2d6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--brown);font:17px/1.65 Lato,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--brown2)}img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;padding-bottom:10px}
+.brand img{height:54px;width:auto}
+nav{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+nav a{font:400 15px/1 Oswald,sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--brown);padding:10px 10px;border-radius:999px}
+nav a.on,nav a:hover{background:var(--blush)}
+.gingham{height:14px;background-color:#fff;background-image:linear-gradient(90deg,rgba(74,44,37,.45) 50%,transparent 50%),linear-gradient(rgba(74,44,37,.45) 50%,transparent 50%);background-size:14px 14px}
+.script{font-family:Allura,cursive;font-weight:400;line-height:1.1}
+.caps{font-family:Oswald,sans-serif;font-weight:300;letter-spacing:.18em;text-transform:uppercase}
+h1,h2,h3{font-family:'Libre Baskerville',Georgia,serif;font-weight:400;line-height:1.25;margin:0 0 .5em}
+h1{font-size:clamp(30px,5vw,46px)}h2{font-size:clamp(25px,3.6vw,34px)}h3{font-size:21px}
+.eyebrow{font:300 14px/1.4 Oswald,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+.heart-rule{display:flex;align-items:center;gap:12px;justify-content:center;color:var(--brown);margin:8px 0 18px}
+.heart-rule:before,.heart-rule:after{content:"";height:1.5px;background:currentColor;flex:0 1 120px;border-radius:2px}
+section{padding:64px 0}
+.hero{padding:56px 0 40px;text-align:center}
+.hero .logo{width:min(440px,86%);margin:0 auto 6px}
+.hero p.lead{max-width:640px;margin:10px auto 0;font-size:19px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;flex-direction:column}
+.card .price{font:400 30px/1 'Libre Baskerville',serif;margin:6px 0 12px}
+.card .price small{font:400 14px Lato,sans-serif;color:var(--muted)}
+.card ul{padding-left:20px;margin:0 0 18px}.card .btn{margin-top:auto}
+.btn{display:inline-block;text-align:center;background:var(--brown);color:#fff;text-decoration:none;font:400 15px/1 Oswald,sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:17px 26px;border-radius:999px;border:0;cursor:pointer}
+.btn:hover{background:var(--brown2)}
+.btn.ghost{background:transparent;color:var(--brown);border:1.5px solid var(--brown)}
+.btn.soon{opacity:.55;cursor:default}
+.note{font-size:13px;color:var(--muted);margin-top:8px}
+.photo{border-radius:20px;overflow:hidden;background:var(--blush);aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font:300 14px Oswald,sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:20px}
+.photo img{width:100%;height:100%;object-fit:cover}
+.band{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.video{aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#2d1b17;color:#efe2d6;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}
+.video iframe{width:100%;height:100%;border:0}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-size:14px;font-weight:700;margin:12px 0 6px}
+input,select,textarea{width:100%;font:16px Lato,sans-serif;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--brown)}
+textarea{min-height:110px}
+dialog{border:0;border-radius:20px;padding:0;max-width:560px;width:calc(100% - 32px);background:var(--paper);color:var(--brown)}
+dialog::backdrop{background:rgba(45,27,23,.55)}
+dialog .in{padding:28px}
+.x{float:right;background:none;border:0;font-size:28px;line-height:1;color:var(--brown);cursor:pointer}
+.days{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}
+.days div{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14px}
+.days b{display:block;font:400 12px Oswald,sans-serif;letter-spacing:.16em;color:var(--muted)}
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
+.pillars div{border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center;background:#fff;font:300 15px Oswald,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.checks{list-style:none;padding:0;margin:0}.checks li{padding:10px 0 10px 34px;position:relative;border-bottom:1px solid var(--line)}
+.checks li:before{content:"♡";position:absolute;left:4px;top:9px;color:var(--brown2)}
+details.faq{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin:10px 0}
+details.faq summary{cursor:pointer;font:400 18px 'Libre Baskerville',serif;list-style:none}
+details.faq summary::-webkit-details-marker{display:none}details.faq summary:after{content:"+";float:right;font-size:22px;line-height:1}
+details.faq[open] summary:after{content:"–"}details.faq p{margin:10px 0 0}
+footer{background:var(--brown);color:#efe2d6;padding:40px 0;text-align:center;font-size:14px}
+footer a{color:#fff}
+footer .script{font-size:34px;color:#fff}
+.shirts{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.shirts figure{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.shirts figcaption{padding:16px 18px}
+.lesson-nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:28px}
+@media(max-width:860px){.grid3,.grid2{grid-template-columns:1fr}.photo{aspect-ratio:1/1}.days{grid-template-columns:repeat(2,1fr)}.pillars{grid-template-columns:repeat(2,1fr)}section{padding:48px 0}}
+@media(max-width:560px){header .wrap{flex-direction:column}.brand img{height:46px}nav a{font-size:13px;padding:8px}.shirts{grid-template-columns:1fr}form .row{grid-template-columns:1fr}.btn{width:100%}}
