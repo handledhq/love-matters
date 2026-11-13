@@ -53,6 +53,10 @@ dialog .in{padding:28px}
 .pillars div{border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center;background:#fff;font:300 15px Oswald,sans-serif;letter-spacing:.14em;text-transform:uppercase}
 .checks{list-style:none;padding:0;margin:0}.checks li{padding:10px 0 10px 34px;position:relative;border-bottom:1px solid var(--line)}
 .checks li:before{content:"♡";position:absolute;left:4px;top:9px;color:var(--brown2)}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:14px}
+blockquote.quote{margin:0;background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--brown,#6b4a3a);border-radius:14px;padding:22px 24px}
+blockquote.quote p{font:italic 400 18px/1.6 'Libre Baskerville',serif;margin:0 0 12px}
+blockquote.quote cite{font-style:normal;color:var(--muted);font-size:15px}
 details.faq{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin:10px 0}
 details.faq summary{cursor:pointer;font:400 18px 'Libre Baskerville',serif;list-style:none}
 details.faq summary::-webkit-details-marker{display:none}details.faq summary:after{content:"+";float:right;font-size:22px;line-height:1}
