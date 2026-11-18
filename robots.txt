@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /class/
+
+Sitemap: https://kellycazzell.com/sitemap.xml
